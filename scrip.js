@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // DOM Elements for Testimonial
     const activeQuote = document.getElementById('active-quote');
-    const activeAvatar = document.getElementById('active-avatar');
     const activeName = document.getElementById('active-name');
     const activePet = document.getElementById('active-pet');
     const tabs = document.querySelectorAll('.testimonial-tab');
@@ -52,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
             setTimeout(() => {
                 activeQuote.innerText = data.quote;
-                activeAvatar.src = data.avatar;
                 activeName.innerText = data.name;
                 activePet.innerText = data.pet;
                 
